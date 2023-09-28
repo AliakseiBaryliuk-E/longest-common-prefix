@@ -1,7 +1,10 @@
 package org.example;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class Solution {
-    public String longestCommonPrefix(String[] strs) {
+    public String longestCommonPrefix(String[] args) {
      Arrays.sort(args, Comparator.comparing(String::length));
 
         if(args.length == 0) {
